@@ -77,8 +77,8 @@ mysql.server start
 ### 2. Clone and Build
 
 ```bash
-git clone <repository-url>
-cd parking-management
+git clone https://github.com/kevoocodes/Evmak-Software-Engineering-Assesment
+cd Evmak-Software-Engineering-Assesment
 ./mvnw clean install
 ```
 

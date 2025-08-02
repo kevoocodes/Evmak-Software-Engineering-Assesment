@@ -49,8 +49,8 @@ public class SecurityConfig {
                 // Allow public access to facilities and spots (GET only)
                 .requestMatchers(HttpMethod.GET, "/api/v1/facilities/**").permitAll()
                 .requestMatchers(HttpMethod.GET, "/api/v1/spots/*/available").permitAll()
-                // Allow data seeding endpoint
-                .requestMatchers("/api/v1/data/seed").permitAll()
+                // Allow data seeding endpoints
+                .requestMatchers("/api/v1/data/seed", "/api/v1/data/seed/large", "/api/v1/data/stats", "/api/v1/data/clear").permitAll()
                 // Allow payment provider info endpoints
                 .requestMatchers(HttpMethod.GET, "/api/v1/payments/providers", "/api/v1/payments/test").permitAll()
                 // Allow cache performance test
